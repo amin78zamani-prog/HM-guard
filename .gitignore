@@ -1,0 +1,18 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Files for the JVM target
+.gradle
+/build/
+/app/build/
+
+# Local configuration file
+local.properties
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+.DS_Store
