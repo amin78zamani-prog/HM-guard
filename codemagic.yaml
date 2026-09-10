@@ -1,0 +1,13 @@
+workflows:
+  android-debug-workflow:
+    name: Android Debug Build
+    max_build_duration: 30
+    environment:
+      java: 17
+    scripts:
+      - name: Grant execute permission for gradlew
+        script: chmod +x gradlew
+      - name: Build Debug APK
+        script: ./gradlew assembleDebug
+    artifacts:
+      - app/build/outputs/apk/debug/*.apk
